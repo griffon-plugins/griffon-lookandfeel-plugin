@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'org.codehaus.griffon.griffon'
+
+griffon {
+    disableDependencyResolution = false
+    includeGroovyDependencies = false
+    version = rootProject.griffonVersion
+    toolkit = 'swing'
+}
+
+dependencies {
+    compile project (':griffon-lookandfeel-core')
+    compile "com.miglayout:miglayout-swing:4.2"
+}

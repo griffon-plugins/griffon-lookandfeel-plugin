@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+apply plugin: 'org.codehaus.griffon.griffon'
+
+apply from: rootProject.file('gradle/code-coverage.gradle')
+
+dependencies {
+    compileOnly "org.codehaus.griffon:griffon-core-compile:${griffonVersion}"
+
+    compile project(':griffon-lookandfeel-core')
+    compile 'com.incors.plaf:kunststoff:2.0.2'
+
+    testCompileOnly "org.codehaus.griffon:griffon-groovy-compile:${griffonVersion}"
+
+    testCompile project(':griffon-lookandfeel-core-test')
+    testCompile "org.codehaus.griffon:griffon-groovy:${griffonVersion}"
+    testCompile('org.spockframework:spock-core:0.7-groovy-2.0') {
+        exclude group: 'org.codehaus.groovy', module: 'groovy-all'
+    }
+    testCompile 'cglib:cglib-nodep:3.1'
+
+    testRuntime "org.codehaus.griffon:griffon-guice:${griffonVersion}"
+    testRuntime "org.codehaus.griffon:griffon-swing:${griffonVersion}"
+    testRuntime 'org.slf4j:slf4j-simple:1.7.10'
+}
+
+compileGroovy.enabled = false
