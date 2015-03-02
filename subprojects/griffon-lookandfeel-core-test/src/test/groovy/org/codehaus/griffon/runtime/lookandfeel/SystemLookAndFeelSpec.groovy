@@ -25,6 +25,7 @@ import javax.inject.Inject
 
 import static org.codehaus.griffon.runtime.lookandfeel.LookAndFeelTestSupport.resetLookAndFeel
 import static org.codehaus.griffon.runtime.lookandfeel.LookAndFeelTestSupport.setAndTestLookAndFeel
+import static griffon.util.GriffonApplicationUtils.isMacOSX
 
 /**
  * @author Andres Almiray
@@ -46,7 +47,7 @@ class SystemLookAndFeelSpec extends Specification {
 
         where:
         handler  | theme
-        'System' | 'CrossPlatform'
+        'System' | (isMacOSX ? 'CrossPlatform' : 'System')
         // 'System' | 'Metal'
         'System' | 'Motif'
         'System' | 'Nimbus'
