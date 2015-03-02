@@ -51,6 +51,5 @@ class SystemLookAndFeelSpec extends Specification {
         // 'System' | 'Metal'
         'System' | 'Motif'
         'System' | 'Nimbus'
-        'System' | 'System'
     }
 }
