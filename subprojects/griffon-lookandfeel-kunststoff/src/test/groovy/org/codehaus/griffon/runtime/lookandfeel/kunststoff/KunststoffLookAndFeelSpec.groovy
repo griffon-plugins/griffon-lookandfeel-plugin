@@ -45,7 +45,7 @@ class KunststoffLookAndFeelSpec extends Specification {
         setAndTestLookAndFeel(handler, theme, lookAndFeelManager)
 
         where:
-        handler   | theme
+        handler      | theme
         'Kunststoff' | 'Desktop'
         'Kunststoff' | 'Notebook'
         'Kunststoff' | 'Presentation'

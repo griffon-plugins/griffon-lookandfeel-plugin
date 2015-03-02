@@ -1,2 +1,2 @@
 
-
+:api_lookandfeel_manager: link:api/griffon/plugins/lookandfeel/LookAndFeelManager.html[LookAndFeelManager, window="_blank"]

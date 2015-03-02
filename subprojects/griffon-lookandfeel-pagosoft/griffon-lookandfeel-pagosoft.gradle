@@ -7,7 +7,7 @@ dependencies {
     compileOnly "org.codehaus.griffon:griffon-core-compile:${griffonVersion}"
 
     compile project(':griffon-lookandfeel-core')
-    compile 'com.github.arnabk:pgslookandfeel:1.1.2'
+    compile 'com.github.arnabk:pgslookandfeel:1.1.4'
 
     testCompileOnly "org.codehaus.griffon:griffon-groovy-compile:${griffonVersion}"
 

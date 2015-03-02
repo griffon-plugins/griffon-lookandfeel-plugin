@@ -45,7 +45,7 @@ class A03LookAndFeelSpec extends Specification {
         setAndTestLookAndFeel(handler, theme, lookAndFeelManager)
 
         where:
-        handler   | theme
-        'A03' | 'A03'
+        handler | theme
+        'A03'   | 'A03'
     }
 }

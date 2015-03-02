@@ -15,12 +15,12 @@ configurations {
 dependencies {
     compileOnly "org.codehaus.griffon:griffon-core-compile:${griffonVersion}"
 
-    compile project (':griffon-lookandfeel-core')
+    compile project(':griffon-lookandfeel-core')
     uberjar ':metouia:1.0.0-beta'
 
     testCompileOnly "org.codehaus.griffon:griffon-groovy-compile:${griffonVersion}"
 
-    testCompile project (':griffon-lookandfeel-core-test')
+    testCompile project(':griffon-lookandfeel-core-test')
     testCompile "org.codehaus.griffon:griffon-groovy:${griffonVersion}"
     testCompile('org.spockframework:spock-core:0.7-groovy-2.0') {
         exclude group: 'org.codehaus.groovy', module: 'groovy-all'

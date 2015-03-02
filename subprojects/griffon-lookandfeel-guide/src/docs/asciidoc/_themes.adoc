@@ -1,0 +1,199 @@
+
+The following table summarizes all currently supported handlers and themes.
+
+.Supported Handlers and Themes
+[cols="2*",options="header"]
+|===
+| Handler             | Theme
+| A03                  | A03
+| EaSynth              | EaSynth
+| JGoodies - Plastic   | BrownSugar
+| JGoodies - Plastic   | DarkStar
+| JGoodies - Plastic   | DesertBlue
+| JGoodies - Plastic   | DesertBluer
+| JGoodies - Plastic   | DesertGreen
+| JGoodies - Plastic   | DesertRed
+| JGoodies - Plastic   | DesertYellow
+| JGoodies - Plastic   | ExperienceBlue
+| JGoodies - Plastic   | ExperienceGreen
+| JGoodies - Plastic   | ExperienceRoyale
+| JGoodies - Plastic   | LightGray
+| JGoodies - Plastic   | Silver
+| JGoodies - Plastic   | SkyBlue
+| JGoodies - Plastic   | SkyBluer
+| JGoodies - Plastic   | SkyGreen
+| JGoodies - Plastic   | SkyKrupp
+| JGoodies - Plastic   | SkyPink
+| JGoodies - Plastic   | SkyRed
+| JGoodies - Plastic   | SkyYellow
+| JGoodies - Plastic3D | BrownSugar
+| JGoodies - Plastic3D | DarkStar
+| JGoodies - Plastic3D | DesertBlue
+| JGoodies - Plastic3D | DesertBluer
+| JGoodies - Plastic3D | DesertGreen
+| JGoodies - Plastic3D | DesertRed
+| JGoodies - Plastic3D | DesertYellow
+| JGoodies - Plastic3D | ExperienceBlue
+| JGoodies - Plastic3D | ExperienceGreen
+| JGoodies - Plastic3D | ExperienceRoyale
+| JGoodies - Plastic3D | LightGray
+| JGoodies - Plastic3D | Silver
+| JGoodies - Plastic3D | SkyBlue
+| JGoodies - Plastic3D | SkyBluer
+| JGoodies - Plastic3D | SkyGreen
+| JGoodies - Plastic3D | SkyKrupp
+| JGoodies - Plastic3D | SkyPink
+| JGoodies - Plastic3D | SkyRed
+| JGoodies - Plastic3D | SkyYellow
+| JGoodies - PlasticXP | BrownSugar
+| JGoodies - PlasticXP | DarkStar
+| JGoodies - PlasticXP | DesertBlue
+| JGoodies - PlasticXP | DesertBluer
+| JGoodies - PlasticXP | DesertGreen
+| JGoodies - PlasticXP | DesertRed
+| JGoodies - PlasticXP | DesertYellow
+| JGoodies - PlasticXP | ExperienceBlue
+| JGoodies - PlasticXP | ExperienceGreen
+| JGoodies - PlasticXP | ExperienceRoyale
+| JGoodies - PlasticXP | LightGray
+| JGoodies - PlasticXP | Silver
+| JGoodies - PlasticXP | SkyBlue
+| JGoodies - PlasticXP | SkyBluer
+| JGoodies - PlasticXP | SkyGreen
+| JGoodies - PlasticXP | SkyKrupp
+| JGoodies - PlasticXP | SkyPink
+| JGoodies - PlasticXP | SkyRed
+| JGoodies - PlasticXP | SkyYellow
+| JTattoo              | Acrylic
+| JTattoo              | Aero
+| JTattoo              | Aluminium
+| JTattoo              | Bernstein
+| JTattoo              | Fast
+| JTattoo              | Graphite
+| JTattoo              | HiFi
+| JTattoo              | Luna
+| JTattoo              | McWin
+| JTattoo              | Mint
+| JTattoo              | Noire
+| JTattoo              | Smart
+| JTattoo              | Texture
+| Kunststoff           | Desktop
+| Kunststoff           | Notebook
+| Kunststoff           | Presentation
+| Liquid               | Liquid
+| Metouia              | Metouia
+| Napkin               | Napkin
+| Office               | Office 2003
+| Office               | Office XP
+| Office               | VisualStudio 2005
+| Pagosoft             | ElegantGray
+| Pagosoft             | JGoodies - BrownSugar
+| Pagosoft             | JGoodies - DarkStar
+| Pagosoft             | JGoodies - DesertBlue
+| Pagosoft             | NativeColor
+| Pagosoft             | Silver
+| Pagosoft             | Vista
+| Seaglass             | Seaglass
+| Skin                 | Amarach
+| Skin                 | Architect Blue
+| Skin                 | Architect Olive
+| Skin                 | b0sumi Ergo
+| Skin                 | b0sumi
+| Skin                 | BeOS
+| Skin                 | Blue Metal
+| Skin                 | Blue Turquesa
+| Skin                 | ChaNinja Blue
+| Skin                 | CoronaH
+| Skin                 | Cougar
+| Skin                 | Crystal2
+| Skin                 | Default
+| Skin                 | FatalE
+| Skin                 | Gfx Oasis
+| Skin                 | Gorilla
+| Skin                 | Hmm XP Blue
+| Skin                 | Hmm XP Mono Blue
+| Skin                 | iBar
+| Skin                 | Midnight
+| Skin                 | MakkiX and MagraX
+| Skin                 | Olive Green Luna XP
+| Skin                 | Opus Luna Silver
+| Skin                 | Opus OS Blue
+| Skin                 | Opus OS Deep
+| Skin                 | Opus OS Olive
+| Skin                 | QuickSilverR
+| Skin                 | Roue Blue
+| Skin                 | Roue Brown
+| Skin                 | Roue Green
+| Skin                 | Royal Inspirat
+| Skin                 | Silver Luna XP
+| Skin                 | SolunaR
+| Skin                 | Tiger Graphite
+| Skin                 | Tiger
+| Skin                 | Underling
+| Substance            | Autum
+| Substance            | BlackSteel
+| Substance            | BlueSteel
+| Substance            | Business
+| Substance            | Cerulean
+| Substance            | Challenger
+| Substance            | CremeCoffee
+| Substance            | Creme
+| Substance            | DustCoffee
+| Substance            | Dust
+| Substance            | EmeralDusk
+| Substance            | Gemini
+| Substance            | GraphiteAqua
+| Substance            | GraphiteGlass
+| Substance            | Graphite
+| Substance            | Magellan
+| Substance            | Mariner
+| Substance            | MistAqua
+| Substance            | MistSilver
+| Substance            | Moderate
+| Substance            | NebulaBrickWall
+| Substance            | Nebula
+| Substance            | OfficeBlack2007
+| Substance            | OfficeBlue2007
+| Substance            | OfficeSilver2007
+| Substance            | Raven
+| Substance            | Sahara
+| Substance            | Twilight
+| Synthetica           | Synthetica
+| Synthetica           | Alu Oxide
+| Synthetica           | Black Eye
+| Synthetica           | Black Moon
+| Synthetica           | Black Star
+| Synthetica           | Blue Ice
+| Synthetica           | Blue Light
+| Synthetica           | Blue Moon
+| Synthetica           | Blue Steel
+| Synthetica           | Classy
+| Synthetica           | Green Dream
+| Synthetica           | Mauve Metallic
+| Synthetica           | Orange Metallic
+| Synthetica           | Silver Moon
+| Synthetica           | Simple2D
+| Synthetica           | Sky Metallic
+| Synthetica           | White Vision
+| System               | CrossPlatform
+| System               | Metal
+| System               | Motif
+| System               | Nimbus
+| System               | System
+| Tinylaf              | Tinylaf
+| Tonic                | Tonic
+|===
+
+
+.Notes
+
+JTattoo requires you to explicit add a compile dependency to your build, for example
+
+[source,groovy]
+----
+compile 'com.jtattoo:JTattoo:1.6.11'
+----
+
+Synthetica requires you to explicitly add compile dependencies for each theme. Use a `flatDir` repository if the
+dependencies are not found on a local repository or archive server.
+

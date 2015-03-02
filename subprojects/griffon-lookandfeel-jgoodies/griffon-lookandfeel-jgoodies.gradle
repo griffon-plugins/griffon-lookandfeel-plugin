@@ -6,12 +6,12 @@ apply from: rootProject.file('gradle/code-coverage.gradle')
 dependencies {
     compileOnly "org.codehaus.griffon:griffon-core-compile:${griffonVersion}"
 
-    compile project (':griffon-lookandfeel-core')
+    compile project(':griffon-lookandfeel-core')
     compile 'com.jgoodies:jgoodies-looks:2.5.3'
 
     testCompileOnly "org.codehaus.griffon:griffon-groovy-compile:${griffonVersion}"
 
-    testCompile project (':griffon-lookandfeel-core-test')
+    testCompile project(':griffon-lookandfeel-core-test')
     testCompile "org.codehaus.griffon:griffon-groovy:${griffonVersion}"
     testCompile('org.spockframework:spock-core:0.7-groovy-2.0') {
         exclude group: 'org.codehaus.groovy', module: 'groovy-all'

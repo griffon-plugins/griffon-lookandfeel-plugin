@@ -45,7 +45,7 @@ class NapkinLookAndFeelSpec extends Specification {
         setAndTestLookAndFeel(handler, theme, lookAndFeelManager)
 
         where:
-        handler   | theme
+        handler  | theme
         'Napkin' | 'Napkin'
     }
 }

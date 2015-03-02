@@ -2,3 +2,5 @@
 [[_introduction]]
 = Introduction
 
+This plugins enables the configuration of the Look&Feel for Swing applications.
+

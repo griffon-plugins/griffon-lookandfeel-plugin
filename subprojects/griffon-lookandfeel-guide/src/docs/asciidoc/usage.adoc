@@ -1,0 +1,18 @@
+
+[[_usage]]
+= Usage
+
+This plugin adds a `{api_lookandfeel_manager}` helper class that takes care of configuring the Look&Feel of a
+Swing application provided the following entries are available in the application's configuration
+
+|===
+| Property               | Type               | Default
+| lookandfeel.handler    | String             | System
+| lookandfeel.theme      | String             | System
+| lookandfeel.properties | Map<String,Object> |
+|===
+
+The `properties` key is optional. If defined it will be used to fill properties in the `javax.swing.UIManager`.
+
+include::_themes.adoc[]
+

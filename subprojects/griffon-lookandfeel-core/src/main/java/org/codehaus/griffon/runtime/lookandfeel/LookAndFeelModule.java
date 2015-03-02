@@ -17,6 +17,7 @@ package org.codehaus.griffon.runtime.lookandfeel;
 
 import griffon.core.addon.GriffonAddon;
 import griffon.core.injection.Module;
+import griffon.inject.DependsOn;
 import griffon.plugins.lookandfeel.LookAndFeelHandler;
 import griffon.plugins.lookandfeel.LookAndFeelManager;
 import org.codehaus.griffon.runtime.core.injection.AbstractModule;
@@ -28,6 +29,7 @@ import javax.inject.Named;
 /**
  * @author Andres Almiray
  */
+@DependsOn("swing")
 @Named("lookandfeel")
 @ServiceProviderFor(Module.class)
 public class LookAndFeelModule extends AbstractModule {

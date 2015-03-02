@@ -45,7 +45,7 @@ class LiquidLookAndFeelSpec extends Specification {
         setAndTestLookAndFeel(handler, theme, lookAndFeelManager)
 
         where:
-        handler   | theme
+        handler  | theme
         'Liquid' | 'Liquid'
     }
 }

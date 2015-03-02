@@ -2,3 +2,92 @@
 [[_configuration]]
 = Configuration
 
+The plugin delivers artifacts for both Swing and JavaFX. It also contains Groovy enhancements
+that can be used in combination with the respective UI toolkit DSL (SwingBuilder and GroovyFX).
+
+== Gradle
+
+You have two options for configuring this plugin: automatic and manual.
+
+=== Automatic
+
+As long as the project has the `org.codehaus.griffon.griffon` plugin applied to it you
+may include the following snippet in `build.gradle`
+
+[source,groovy,options="nowrap"]
+[subs="attributes"]
+----
+dependencies {
+    griffon '{project-group}:griffon-lookandfeel-plugin:{project-version}'
+}
+----
+
+The `griffon` plugin will take care of the rest given its configuration.
+
+=== Manual
+
+You will need to configure any of the following blocks depending on your setup
+
+.Core
+[source,groovy,options="nowrap"]
+[subs="attributes"]
+----
+dependencies {
+    compile 'com.lookandfeel:lookandfeel-core:{project-version}'
+}
+----
+
+== Maven
+
+First configure the `griffon-lookandfeel-plugin` BOM in your POM file, by placing the following
+snippet before the `<build>` element
+
+[source,xml,options="nowrap"]
+[subs="attributes,verbatim"]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>{project-group}</groupId>
+            <artifactId>griffon-lookandfeel-plugin</artifactId>
+            <version>{project-version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+Next configure dependencies as required by your particular setup
+
+.Core
+[source,xml,options="nowrap"]
+[subs="attributes,verbatim"]
+----
+<dependency>
+    <groupId>com.lookandfeel</groupId>
+    <artifactId>lookandfeel-core</artifactId>
+</dependency>
+----
+
+== Additional JARs
+
+The following list summarizes all JAR files that provide additional handlers and themes
+
+ * {project-group}:griffon-lookandfeel-a03:{project-version}
+ * {project-group}:griffon-lookandfeel-easynth:{project-version}
+ * {project-group}:griffon-lookandfeel-jgoodies:{project-version}
+ * {project-group}:griffon-lookandfeel-jtattoo:{project-version}
+ * {project-group}:griffon-lookandfeel-kunststoff:{project-version}
+ * {project-group}:griffon-lookandfeel-liquid:{project-version}
+ * {project-group}:griffon-lookandfeel-metouia:{project-version}
+ * {project-group}:griffon-lookandfeel-napkin:{project-version}
+ * {project-group}:griffon-lookandfeel-office:{project-version}
+ * {project-group}:griffon-lookandfeel-pagosoft:{project-version}
+ * {project-group}:griffon-lookandfeel-seaglass:{project-version}
+ * {project-group}:griffon-lookandfeel-skin:{project-version}
+ * {project-group}:griffon-lookandfeel-substance:{project-version}
+ * {project-group}:griffon-lookandfeel-synthetica:{project-version}
+ * {project-group}:griffon-lookandfeel-tinylaf:{project-version}
+ * {project-group}:griffon-lookandfeel-tonic:{project-version}
+

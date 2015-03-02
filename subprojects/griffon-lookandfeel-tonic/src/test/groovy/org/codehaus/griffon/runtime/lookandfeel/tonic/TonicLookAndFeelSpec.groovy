@@ -45,7 +45,7 @@ class TonicLookAndFeelSpec extends Specification {
         setAndTestLookAndFeel(handler, theme, lookAndFeelManager)
 
         where:
-        handler   | theme
+        handler | theme
         'Tonic' | 'Tonic'
     }
 }
