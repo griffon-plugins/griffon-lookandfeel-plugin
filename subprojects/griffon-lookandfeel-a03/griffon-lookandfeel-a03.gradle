@@ -22,28 +22,28 @@ dependencies {
 
     testCompile project(':griffon-lookandfeel-core-test')
     testCompile "org.codehaus.griffon:griffon-groovy:${griffonVersion}"
-    testCompile('org.spockframework:spock-core:1.0-groovy-2.4') {
+    testCompile("org.spockframework:spock-core:$spockVersion") {
         exclude group: 'org.codehaus.groovy', module: 'groovy-all'
     }
-    testCompile 'cglib:cglib-nodep:3.1'
+    testCompile "cglib:cglib-nodep:$cglibVersion"
 
     testRuntime "org.codehaus.griffon:griffon-guice:${griffonVersion}"
     testRuntime "org.codehaus.griffon:griffon-swing:${griffonVersion}"
-    testRuntime 'org.slf4j:slf4j-simple:1.7.12'
+    testRuntime "org.slf4j:slf4j-simple:$slf4jVersion"
 }
 
 sourceSets {
     main {
-        compileClasspath += [configurations.uberjar]
+        compileClasspath += configurations.uberjar
     }
     test {
-        compileClasspath += [configurations.uberjar]
-        runtimeClasspath += [configurations.uberjar]
+        compileClasspath += configurations.uberjar
+        runtimeClasspath += configurations.uberjar
     }
 }
 
 javadoc {
-    classpath += [configurations.uberjar]
+    classpath += configurations.uberjar
 }
 
 idea {
@@ -65,6 +65,7 @@ shadowJar {
             'Created-By': "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})".toString(),
             'Build-Date': buildDate,
             'Build-Time': buildTime,
+            'Build-Revision': buildRevision,
             'Specification-Title': project.name,
             'Specification-Version': project.version,
             'Specification-Vendor': 'griffon-framework.org',

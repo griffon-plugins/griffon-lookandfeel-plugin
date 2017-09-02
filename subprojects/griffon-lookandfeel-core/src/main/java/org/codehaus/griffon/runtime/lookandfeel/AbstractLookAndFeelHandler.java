@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2015 the original author or authors.
+ * Copyright 2014-2017 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ public abstract class AbstractLookAndFeelHandler implements LookAndFeelHandler {
     private final String name;
 
     public AbstractLookAndFeelHandler() {
-        this.name = capitalize(nameFor(this, "LookAndFeelHandler"));
+        this.name = capitalize(nameFor(getClass()));
     }
 
     public AbstractLookAndFeelHandler(String name) {
@@ -57,17 +57,17 @@ public abstract class AbstractLookAndFeelHandler implements LookAndFeelHandler {
     }
 
     public final boolean equals(Object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-        if (!(obj instanceof LookAndFeelHandler)) return false;
+        if (obj == null) { return false; }
+        if (obj == this) { return true; }
+        if (!(obj instanceof LookAndFeelHandler)) { return false; }
 
         LookAndFeelHandler other = (LookAndFeelHandler) obj;
         return name.equals(other.getName());
     }
 
     public final int compareTo(LookAndFeelHandler obj) {
-        if (obj == null) return -1;
-        if (obj == this) return 0;
+        if (obj == null) { return -1; }
+        if (obj == this) { return 0; }
 
         return name.compareTo(obj.getName());
     }
@@ -75,7 +75,7 @@ public abstract class AbstractLookAndFeelHandler implements LookAndFeelHandler {
     @Override
     public void preview(@Nonnull LookAndFeelDescriptor descriptor, @Nonnull Component target) {
         requireNonNull(descriptor, ERROR_DESCRIPTOR_NULL);
-        if (!handles(descriptor)) return;
+        if (!handles(descriptor)) { return; }
         descriptor.preview(target);
     }
 
