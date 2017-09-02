@@ -3,6 +3,13 @@ apply plugin: 'org.codehaus.griffon.griffon'
 
 apply from: rootProject.file('gradle/code-coverage.gradle')
 
+griffon {
+    disableDependencyResolution = false
+    includeGroovyDependencies = false
+    version = rootProject.griffonVersion
+    applicationProject = false
+}
+
 dependencies {
     compile project(':griffon-lookandfeel-core')
     compile "org.codehaus.griffon:griffon-core-test:${griffonVersion}"

@@ -5,6 +5,7 @@ griffon {
     disableDependencyResolution = false
     includeGroovyDependencies = false
     version = rootProject.griffonVersion
+    applicationProject = false
     toolkit = 'swing'
 }
 

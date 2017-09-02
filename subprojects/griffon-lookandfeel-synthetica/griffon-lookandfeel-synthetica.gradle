@@ -3,6 +3,13 @@ apply plugin: 'org.codehaus.griffon.griffon'
 
 apply from: rootProject.file('gradle/code-coverage.gradle')
 
+griffon {
+    disableDependencyResolution = false
+    includeGroovyDependencies = false
+    version = rootProject.griffonVersion
+    applicationProject = false
+}
+
 repositories {
     flatDir { dir 'lib' }
 }
