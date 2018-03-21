@@ -33,7 +33,7 @@ You will need to configure any of the following blocks depending on your setup
 [subs="attributes"]
 ----
 dependencies {
-    compile 'com.lookandfeel:lookandfeel-core:{project-version}'
+    compile '{project-group}:lookandfeel-core:{project-version}'
 }
 ----
 
@@ -65,7 +65,7 @@ Next configure dependencies as required by your particular setup
 [subs="attributes,verbatim"]
 ----
 <dependency>
-    <groupId>com.lookandfeel</groupId>
+    <groupId>{project-group}</groupId>
     <artifactId>lookandfeel-core</artifactId>
 </dependency>
 ----
